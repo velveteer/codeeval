@@ -18,7 +18,7 @@ var minimumCoins = function minimumCoins(number, count, sum) {
         if ((sum + val) > number) {
             continue;
         } else {
-            return minimumCoins(number, count + 1, sum + val, values);
+            return minimumCoins(number, count + 1, sum + val);
         }
     }
 }
